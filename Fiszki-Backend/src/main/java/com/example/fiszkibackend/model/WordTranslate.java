@@ -18,11 +18,11 @@ public class WordTranslate {
     private Long idTranslate;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "word_eng")
+    @JoinColumn(name = "id_eng")
     private WordEng wordEng;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "id_Pl")
+    @JoinColumn(name = "id_pl")
     private WordPl wordPl;
 
     @Override
